@@ -2,7 +2,6 @@
 
 #define TAG "MazdaProtocol"
 
-// Mazda uses similar timing to Ford but slightly adjusted
 static const SubGhzBlockConst subghz_protocol_mazda_const = {
     .te_short = 250,
     .te_long = 500,
@@ -406,4 +405,5 @@ void subghz_protocol_decoder_mazda_get_string(void *context, FuriString *output)
         instance->count,
         (instance->key2 >> 8) & 0xFF,
         instance->key2 & 0xFF);
+
 }
