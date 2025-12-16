@@ -2,18 +2,6 @@
 
 #define TAG "SubGhzProtocolMitsubishi"
 
-// Mitsubishi Key Fob Protocol
-// Based on: FZ Private CFW list (17-October-2025)
-// Models: L200, Pajero, Pajero Sport, ASX, Galant, Grandis, Colt, etc.
-//
-// According to CFW list: "Several models using KIA-Hyundai protocols"
-// Modulation: FM476 (same as KIA/Hyundai)
-// Frequency: 433.92 MHz (EU), 315 MHz (some markets)
-// Status: IN DEVELOPMENT in the CFW
-//
-// This decoder recognizes Mitsubishi signals using KIA/Hyundai protocol base
-// with Mitsubishi-specific identifiers
-
 static const SubGhzBlockConst subghz_protocol_mitsubishi_const = {
     .te_short = 320,  // Similar to KIA timing
     .te_long = 640,   // ~2× te_short
